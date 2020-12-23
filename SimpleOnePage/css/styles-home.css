@@ -1,0 +1,262 @@
+/* Configuração Inicial */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	background-size: auto;
+	background-image: url("../image/background.png");
+}
+
+/* Fim configuração inicial */
+
+/* Começo Home */
+
+.container-home {
+	padding-top: 5vw;
+}
+
+.introduction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5vw;
+	margin-left: 2vw;
+	opacity: 0.8;
+}
+
+.introduction h1 {
+	color: #FFFFFF;
+	font-size: 1.6rem;
+	padding-bottom: 1vw;
+	text-shadow: black 0.1em 0.1em 0.2em;;
+}
+
+.text {
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	text-align: justify;
+	padding: 1rem;
+	background-image: linear-gradient(to right, #993299, #590059);
+	box-shadow: 10px 8px 11px rgba(50, 50, 50, 0.77);
+	width: 50vw;
+	transition: all .5s;
+}
+
+.text:hover {
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.introduction text {
+	display: flex;
+}
+
+#ph1 {
+	padding-top: 1vw;
+}
+
+.title-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.title-p h1 {
+	font-size: 2rem;
+	color: #F3F3F3;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.title-p h2 {
+	font-size: 1.2rem;
+	color: #F3F3F3;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#icon-social {
+	width: 4rem;
+	height: 4rem;
+	transition: all .4s;
+	filter: drop-shadow(8px 3px 1px rgba(0, 0, 0, .5));
+	opacity: 0.8;
+}
+
+#icon-social:hover {
+	border: 5px solid #590059;
+	border-radius: 50%;
+	-webkit-filter: drop-shadow(10px 5px 1px rgba(0, 0, 0, .5));
+	filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, .5));
+	-webkit-transform: rotateZ(-360deg) scale(1.4);
+	transform: rotateZ(-360deg) scale(1.4);
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem;
+}
+
+.icons a {
+	margin: 1rem;
+}
+
+.title-links {
+	font-size: 2rem;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/* Fim Home */
+
+/* Começo responsivo */
+
+@media(max-width: 900px) {
+	.introduction{
+		padding-bottom: 1.5rem;
+	}
+}
+
+@media(max-width: 665px) {
+	/* Começo Home */
+	.container-home {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.introduction {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-top: 5vw;
+		margin-left: 2vw;
+	}
+	.title-p h2 {
+		font-size: 1.1rem;
+	}
+	.introduction {
+		padding-top: 5vw;
+		margin-left: 2vw;
+	}
+	.introduction h1 {
+		color: #FFFFFF;
+		font-size: 1.5rem;
+		padding-bottom: 1.5vw;
+	}
+	.text {
+		color: #FFFFFF;
+		font-size: 1rem;
+		text-align: left;
+		padding: 1rem;
+		width: 80vw;
+		background-image: linear-gradient(to right, #993299, #590059);
+		box-shadow: 10px 8px 11px rgba(50, 50, 50, 0.77);
+		transition: all 2s;
+	}
+	.text:hover {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+		background-image: linear-gradient(to right, #a64ca6, #590059);
+	}
+	#ph1 {
+		padding-top: 1vw;
+	}
+	/* Fim Home */
+}
+
+@media(max-width: 417px) {
+	/* Começo Home */
+	.container-home {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center
+	}
+	.introduction {
+		padding-top: 5vw;
+		margin-left: 2vw;
+	}
+	.introduction h1 {
+		color: #FFFFFF;
+		font-size: 1.5rem;
+		padding-bottom: 1.5vw;
+	}
+	.text {
+		color: #FFFFFF;
+		font-size: 1rem;
+		text-align: left;
+		padding: 1rem;
+		width: 80vw;
+		background-image: linear-gradient(to right, #993299, #590059);
+		box-shadow: 10px 8px 11px rgba(50, 50, 50, 0.77);
+	}
+	#ph1 {
+		padding-top: 1vw;
+	}
+	/* Fim Home */
+}
+
+@media(max-width: 385px) {
+	/* Começo Home */
+	.introduction h1 {
+		font-size: 1.5rem;
+		padding-bottom: 1.5vw;
+	}
+	.title-p h1 {
+		font-size: 1.7rem;
+		color: #F3F3F3;
+	}
+	.title-p h2 {
+		font-size: 1rem;
+		color: #F3F3F3;
+	}
+	/* Fim Home */
+}
+
+@media(max-width: 305px) {
+	/* Começo Home */
+	.title-p h1 {
+		font-size: 1.4rem;
+		color: #F3F3F3;
+	}
+	.title-p h2 {
+		font-size: 0.9rem;
+		color: #F3F3F3;
+	}
+	.introduction {
+		display: flex;
+		justify-content: center;
+		align-items: left;
+		padding-top: 5vw;
+		margin-left: 2vw;
+	}
+	.introduction h1 {
+		color: #FFFFFF;
+		font-size: 1.5rem;
+		padding-bottom: 1.5vw;
+	}
+	.text {
+		width: 80vw;
+	}
+	/* Fim Home */
+}
+
+/* Fim responsivo */

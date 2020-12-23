@@ -1,0 +1,494 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	background-size: auto;
+	background-image: url("../image/background-curriculo.png");
+}
+
+/*  Começo curriculo */
+
+.container-curriculo {
+	padding-top: 5vw;
+}
+
+.title-curriculo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 2vw;
+	opacity: 0.8;
+}
+
+.title-curriculo h2{
+	font-size: 1.2rem;
+	color: #F3F3F3;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.title-curriculo h1 {
+	font-size: 2rem;
+	color: #F3F3F3;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#hw-icon {
+	width: 1rem;
+	height: 10rem;
+}
+
+.button-curriculo-pdf{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#button-modal{
+	font-size: 1rem;
+	background-color: #000000;
+	border: none;
+	opacity: 0.6;
+	transition: all 1s;
+}
+
+#button-modal a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#button-modal:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* Fim Curriculo */
+
+/* Começo CARROUSEL  */
+
+
+#icons-hw{
+	width: 10rem;
+	height: 10rem;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+}
+
+.content-slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 4rem;
+	margin-left: 2.5rem;
+}
+
+.slider {
+	margin: 40px auto 0;
+	overflow: visible;
+	position: relative;
+	padding-bottom: 3.5rem;
+}
+
+.mask {
+	overflow: hidden;
+	height: 13rem;
+	width: 45rem;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	text-align: justify;
+	padding: 0.5rem;
+	background-color: #ff8b87;
+	box-shadow: 10px 8px 11px rgba(50, 50, 50, 0.77);
+	opacity: 0.6;
+	transition: all .5s;
+}
+
+.slider ul {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.slider li {
+	width: 680px;
+	height: 320px;
+	position: absolute;
+	top: -325px;
+	list-style: none;
+}
+
+.slider .quote {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.slider .source {
+	font-size: 1rem;
+	text-align: right;
+}
+
+.slider li.anim1 {
+	animation: cycle 15s linear infinite;
+}
+
+.slider li.anim2 {
+	animation: cycle2 15s linear infinite;
+}
+
+.slider li.anim3 {
+	animation: cycle3 15s linear infinite;
+}
+
+.slider li.anim4 {
+	animation: cycle4 15s linear infinite;
+}
+
+.slider li.anim5 {
+	animation: cycle5 15s linear infinite;
+}
+.slider li.anim6 {
+	animation: cycle5 15s linear infinite;
+}
+
+.slider:hover li {
+	animation-play-state: paused;
+}
+
+@keyframes cycle {
+	0% {
+		top: 0px;
+	}
+	4% {
+		top: 0px;
+	}
+	16% {
+		top: 0px;
+		opacity: 1;
+		z-index: 0;
+	}
+	20% {
+		top: 325px;
+		opacity: 0;
+		z-index: 0;
+	}
+	21% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+	50% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+	92% {
+		top: -325px;
+		opacity: 0;
+		z-index: 0;
+	}
+	96% {
+		top: -325px;
+		opacity: 0;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes cycle2 {
+	0% {
+		top: -325px;
+		opacity: 0;
+	}
+	16% {
+		top: -325px;
+		opacity: 0;
+	}
+	20% {
+		top: 0px;
+		opacity: 1;
+	}
+	24% {
+		top: 0px;
+		opacity: 1;
+	}
+	36% {
+		top: 0px;
+		opacity: 1;
+		z-index: 0;
+	}
+	40% {
+		top: 325px;
+		opacity: 0;
+		z-index: 0;
+	}
+	41% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+	100% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+@keyframes cycle3 {
+	0% {
+		top: -325px;
+		opacity: 0;
+	}
+	36% {
+		top: -325px;
+		opacity: 0;
+	}
+	40% {
+		top: 0px;
+		opacity: 1;
+	}
+	44% {
+		top: 0px;
+		opacity: 1;
+	}
+	56% {
+		top: 0px;
+		opacity: 1;
+		z-index: 0;
+	}
+	60% {
+		top: 325px;
+		opacity: 0;
+		z-index: 0;
+	}
+	61% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+	100% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+@keyframes cycle4 {
+	0% {
+		top: -325px;
+		opacity: 0;
+	}
+	56% {
+		top: -325px;
+		opacity: 0;
+	}
+	60% {
+		top: 0px;
+		opacity: 1;
+	}
+	64% {
+		top: 0px;
+		opacity: 1;
+	}
+	76% {
+		top: 0px;
+		opacity: 1;
+		z-index: 0;
+	}
+	80% {
+		top: 325px;
+		opacity: 0;
+		z-index: 0;
+	}
+	81% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+	100% {
+		top: -325px;
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+@keyframes cycle5 {
+	0% {
+		top: -325px;
+		opacity: 0;
+	}
+	76% {
+		top: -325px;
+		opacity: 0;
+	}
+	80% {
+		top: 0px;
+		opacity: 1;
+	}
+	84% {
+		top: 0px;
+		opacity: 1;
+	}
+	96% {
+		top: 0px;
+		opacity: 1;
+		z-index: 0;
+	}
+	100% {
+		top: 325px;
+		opacity: 0;
+		z-index: 0;
+	}
+}
+	
+
+/* Fim Carrousel */
+
+/* Começo Responsivo */
+
+@media(max-width: 950px) {
+	.content-slider {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 2.5rem;
+		margin-left: 2rem;
+	}
+}
+
+@media(max-width: 740px) {
+	.content-slider {
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+	
+	.slider {
+		margin: 40px auto 0;
+		overflow: visible;
+		position: relative;
+		padding-bottom: 3.5rem;
+	}
+	
+	.mask {
+		overflow: hidden;
+		height: 13rem;
+		width: 35rem;
+		color: #FFFFFF;
+		font-size: 1.2rem;
+		padding: 0.5rem;
+		opacity: 0.5;
+		background-color: #292929;
+		box-shadow: 10px 8px 11px rgba(50, 50, 50, 0.77);
+		opacity: 0.6;
+	}
+	.slider li {
+		width: 540px;
+		height: 320px;
+		list-style: none;
+	}
+
+	.slider .quote {
+		font-size: 1.6rem;
+	}
+}
+
+@media(max-width: 590px) {
+	.mask {
+		overflow: hidden;
+		height: 10rem;
+		width: 25rem;
+		color: #FFFFFF;
+		font-size: 1.2rem;
+		opacity: 0.5;
+		padding: 0.5rem;
+	}
+	
+	.slider li {
+		width: 380px;
+		height: 250px;
+		list-style: none;
+	}
+
+	#icons-hw{
+		width: 7.5rem;
+		height: 7.5rem;
+	}
+	.slider .source {
+		font-size: 0.9rem;
+		text-align: right;
+	}
+	.slider .quote {
+		font-size: 1.4rem;
+	}
+}
+
+@media(max-width: 415px) {
+	.mask {
+		overflow: hidden;
+		height: 10rem;
+		width: 20rem;
+		color: #FFFFFF;
+		font-size: 1.2rem;
+		opacity: 0.5;
+		padding: 0.5rem;
+	}
+	
+	.slider li {
+		width: 300px;
+		height: 250px;
+		list-style: none;
+	}
+
+	.slider .quote {
+		font-size: 1.1rem;
+	}
+}
+
+@media(max-width: 365px){
+	.title-curriculo h1 {
+		font-size: 1.5rem;
+	}
+
+	.title-curriculo h2 {
+		font-size: 1rem;
+	}
+}
+
+@media(max-width: 335px) {
+	.mask {
+		overflow: hidden;
+		height: 10rem;
+		width: 15rem;
+		color: #FFFFFF;
+		font-size: 1.2rem;
+		opacity: 0.5;
+		padding: 0.5rem;
+	}
+	
+	.slider li {
+		width: 225px;
+		height: 200px;
+		list-style: none;
+	}
+
+	#icons-hw{
+		width: 6.5rem;
+		height: 6.5rem;
+	}
+	.slider .source {
+		font-size: 0.8rem;
+		text-align: right;
+	}
+
+	.slider .quote {
+		font-size: 1rem;
+	}
+}

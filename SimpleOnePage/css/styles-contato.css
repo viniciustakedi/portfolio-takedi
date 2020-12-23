@@ -1,0 +1,162 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	background-size: auto;
+	background-image: url("../image/background-contato.png");
+}
+
+/*  Começo contato */
+
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	padding-top: 5vw;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.title h1{
+    color: #FFFFFF;
+	font-size: 2rem;
+	text-shadow: black 0.1em 0.1em 0.2em;;
+}
+
+.informations-contact{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.informations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+    padding-top: 1vw;
+    width: 40vw;
+    background-image: linear-gradient(to right, grey, #808080);
+    opacity: 0.8;
+	box-shadow: 10px 8px 11px rgba(50, 50, 50, 0.77);
+	transition: all .5s;
+}
+
+.informations:hover {
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.principal{
+    margin-right: 5rem;
+}
+.principal h3{
+    font-size: 1.4rem;
+}
+.principal p{
+    font-size: 1rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+#button-modal{
+	font-size: 1rem;
+	background-color: #000000;
+	border: none;
+	opacity: 0.8;
+	transition: all 1s;
+}
+
+#button-modal a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#button-modal:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#button-modal-s{
+    font-size: 1rem;
+	background-color: #fff;
+	border: none;
+	transition: all 1s;
+}
+
+#button-modal-s a {
+    color: #000;
+	text-decoration: none
+}
+
+/* Fim contato */
+
+/* Começo Responsivo */
+
+@media(max-width: 1175px){
+    .informations{
+        width: 50vw;
+    }
+}
+
+@media(max-width: 935px){
+    .informations{
+        width: 55vw;
+    }
+}
+
+@media(max-width: 851px){
+    .informations{
+        width: 60vw;
+    }
+
+    .informations{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .principal{
+        padding-top: 1rem;
+    }
+    .secundario{
+        padding-bottom: 1rem;
+    }
+}
+
+@media(max-width: 505px) {
+    .informations{
+        width: 70vw;
+    }
+}
+@media(max-width: 430px) {
+    .informations{
+        width: 80vw;
+    }
+}
+@media(max-width: 380px) {
+    .informations{
+        width: 90vw;
+    }
+
+    .principal{
+        margin-right: 5rem;
+    }
+    .principal h3{
+        font-size: 1.2rem;
+    }
+    .principal p{
+        font-size: 0.8rem;
+    }
+}
