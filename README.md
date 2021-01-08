@@ -1,4 +1,4 @@
-# portfolio-takedi
+# Propósito deste portfólio
 Meu portfólio, o propósito desse site seria me apresentar para todas as pessoas que estão interessadas em me conhecer.
 
 # O que contem no site?
