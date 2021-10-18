@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer";
 import Menu from "../../components/menu";
 import './home-style.css'
 
@@ -9,10 +10,13 @@ export default function Home() {
                 <Menu/>
             </header>
             <main>
-                <h1>Main</h1>
+                <section className="content-home">
+                    <span>Vinicius Takedi</span>
+                    <h1>Desenvolvedor full-stack Jr.</h1>
+                </section>
             </main>
             <footer>
-                <h1>footer</h1>
+                <Footer/>
             </footer>
         </div>
     )

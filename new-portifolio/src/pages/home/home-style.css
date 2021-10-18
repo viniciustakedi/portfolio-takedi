@@ -1,0 +1,25 @@
+main{
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.content-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50rem;
+}
+
+.content-home span{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #878a8f;
+}
+
+.content-home h1{
+    font-size: 2.625rem;
+    color: #0f141e;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #0f141e20;
+}
