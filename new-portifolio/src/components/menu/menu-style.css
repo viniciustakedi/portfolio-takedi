@@ -14,6 +14,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10000000;
 }
 
 .menu nav a {
@@ -27,6 +30,7 @@
 }
 
 .links-span a span {
+    display: inline-block;
     font-weight: 600;
     font-size: 0.875rem;
     color: #323232;
@@ -34,6 +38,19 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+}
+
+.links-span a span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #323232;
+    transition: width .3s;
+}
+
+.links-span a span:hover::after {
+    width: 100%;
 }
 
 .links-span a:nth-child(1) {
@@ -168,6 +185,7 @@
         padding-bottom: 3rem;
     }
     .links-span-mobile a span {
+        display: inline-block;
         font-weight: 600;
         font-size: 1.375rem;
         color: #fff;
@@ -176,6 +194,18 @@
         text-decoration: none;
         text-transform: uppercase;
         transition: all 0.3s ease-in-out;
+    }
+    .links-span-mobile a span::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: purple;
+        transition: width .4s;
+    }
+    
+    .links-span-mobile a span:hover::after {
+        width: 100%;
     }
     .links-span-mobile a {
         padding: 1rem;
