@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="content-footer">
-                <span>© Vinicius Takedi 2021. Made in São Paulo, Brazil.</span>
+                <span>© Vinicius Takedi 2021. Feito em São Paulo, Brasil.</span>
             </div>
         </div>
     );

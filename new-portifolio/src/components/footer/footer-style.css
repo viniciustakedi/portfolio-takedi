@@ -1,3 +1,4 @@
+/* =======[ Começo estilização footer ]======= */
 .footer{
     display: flex;
     justify-content: center;
@@ -5,20 +6,16 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    padding-top: 2rem;
 }
 
-.footer hr{
-    border: none;
-    height: 1px;
-    background-color: #878a8f;
-    width: 85%;
-}
 
 .content-informations-footer{
     display: flex;
     justify-content: space-between;
     width: 85%;
-    padding: 2rem;
+    border-top: 1px solid #878a8f71;
+    padding: 4rem;
 }
 
 .information{
@@ -30,7 +27,7 @@
 }
 
 .information:nth-child(1) {
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
 .information:nth-child(2) {
     margin-right: 1rem;
@@ -41,7 +38,7 @@
     margin-left: 1rem;
 }
 .information:nth-child(4) {
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 .information h2{
@@ -49,12 +46,14 @@
     color: #0f141e;
     font-weight: 700;
     padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px #0f141e20;
 }
 
 .information span{
     font-size: 1rem;
     color: #878a8f;
     padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px #0f141e20;
 }
 .information p{
     font-size: 1rem;
@@ -69,6 +68,7 @@
     display: inline-block;
     text-decoration: none;
     color: #0f141e;
+    padding: 0.15rem;
     font-size: 1rem;
 }
 
@@ -104,3 +104,63 @@
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     background-color: #323232;
 }
+
+/* =======[ Fim etilização footer]======= */
+
+/* =======[ Começo responsividade ]======= */
+
+@media (max-width: 1160px) {
+    .content-informations-footer{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+        border-top: 1px solid #878a8f;
+        padding: 2rem;
+    }
+    .information:nth-child(1) {
+        margin-right: 0rem;
+    }
+    .information:nth-child(2) {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    .information:nth-child(3) {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    .information:nth-child(4) {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .content-informations-footer{
+        grid-template-columns: 1fr;
+        grid-gap: 42px;
+    }
+}
+
+@media (max-width: 750px) {
+    .content-informations-footer{
+        grid-template-columns: 1fr;
+        grid-gap: 42px;
+    }
+}
+
+@media (max-width: 400px) {
+    .content-informations-footer{
+        padding: 0rem;
+    }
+    .content-informations-footer{
+        grid-gap: 28px;
+    }
+    .information:nth-child(1) {
+        padding-top: 2rem;
+    }
+    .information:nth-child(4) {
+        padding-bottom: 2rem;
+    }
+}
+
+/* =======[ Fim responsividade ]======= */
