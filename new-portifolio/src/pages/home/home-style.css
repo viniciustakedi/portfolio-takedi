@@ -12,34 +12,11 @@ main {
     height: 50rem;
 }
 
-.title-first-home{
+.title-first-home {
     width: 50%;
 }
-.image-first-home{
-    display: flex;
-    justify-content: center;
-    background-image: url('../../assets/images/home-image.jpg');
-    background-attachment: scroll;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
 
-.opacity-background{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease-in-out;
-}
-
-.opacity-background:hover{
-    background-color: rgba(0, 0, 0, 0.65);
-}
-
-.title-home{
+.title-home {
     width: 40rem;
 }
 
@@ -60,12 +37,12 @@ main {
     text-shadow: 2px 2px 4px #0f141e20;
     animation: h1-home 0.4s forwards ease-in-out;
     animation-delay: 0.8s;
+    visibility: hidden;
     padding-top: 0.5rem;
     padding-bottom: 1.5rem;
-    visibility: hidden;
 }
 
-.title-first-home p{
+.title-first-home p {
     font-size: 1.125rem;
     color: #7f8186;
     text-shadow: 2px 2px 4px #0f141e20;
@@ -75,6 +52,141 @@ main {
     visibility: hidden;
 }
 
+.image-first-home {
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/images/home-image.jpg');
+    background-attachment: scroll;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.opacity-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.opacity-background:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition-delay: 0.1s;
+}
+
+
+.opacity-background img{
+    display: none;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: none;
+    object-fit: contain;
+    opacity: 0.5;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    visibility: hidden;
+}
+
+.opacity-background:hover img{
+    display: flex;
+    position: relative;
+    top: -5rem;
+    width: 10rem;
+    height: 10rem;
+    opacity: 1;
+    animation: name-span-home 0.6s both ease alternate;
+    animation-delay: 0.3s;
+    visibility: hidden;
+}
+
+.buttons-home{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.buttons-home a{
+    background: none;
+    padding: 1rem;
+}
+
+#icon-contact-home{
+    cursor: pointer;
+    background: none;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    transition: all 0.3s ease-in-out;
+}
+
+.opacity-background #icon-contact-home:hover{
+    transform: scale(1.1);
+}
+
+.opacity-background:hover .buttons-home{
+    display: flex;
+    animation: name-span-home 0.6s both ease alternate;
+    animation-delay: 0.3s;
+    visibility: hidden;
+}
+
+.opacity-background:hover a:nth-child(1){
+    animation: name-ICON-home 0.4s both ease alternate;
+    animation-delay: 0.3s;
+    visibility: hidden;
+}
+
+.opacity-background:hover a:nth-child(2){
+    animation: name-ICON-home 0.4s both ease alternate;
+    animation-delay: 0.6s;
+    visibility: hidden;
+}
+
+.opacity-background:hover a:nth-child(3){
+    animation: name-ICON-home 0.4s both ease alternate;
+    animation-delay: 0.9s;
+    visibility: hidden;
+}
+
+.opacity-background span{
+    background: none;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #fff;
+    display: none;
+    visibility: hidden;
+}
+
+.opacity-background:hover span{
+    display: flex;
+    animation: name-span-home 0.4s both ease alternate;
+    animation-delay: 1.2s;
+    padding-top: 2rem;
+    visibility: hidden;
+}
+
+.opacity-background p{
+    padding: 0.8rem;
+    background: none;
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    opacity: 0.75;
+    color: #f3f3f3;
+    animation: p-h1-home 0.4s forwards ease-in-out;
+    animation-delay: 0.8s;
+    visibility: hidden;
+}
+
+.opacity-background:hover p{
+    display: none;
+}
 
 /* =======[ Fim estilização home ]======= */
 
@@ -85,11 +197,25 @@ main {
         position: relative;
         top: 1rem;
         opacity: 0.1;
-    } 
+    }
     to {
         position: relative;
         top: 0rem;
         opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes p-h1-home {
+    from {
+        position: relative;
+        top: 1rem;
+        opacity: 0.1;
+    }
+    to {
+        position: relative;
+        top: 0rem;
+        opacity: 0.6;
         visibility: visible;
     }
 }
@@ -99,7 +225,7 @@ main {
         position: relative;
         top: 1rem;
         opacity: 0.1;
-    } 
+    }
     to {
         position: relative;
         top: 0rem;
@@ -107,12 +233,27 @@ main {
         visibility: visible;
     }
 }
+
 @keyframes name-p-home {
     from {
         position: relative;
         top: -1rem;
         opacity: 0.1;
-    } 
+    }
+    to {
+        position: relative;
+        top: 0rem;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes name-ICON-home {
+    from {
+        position: relative;
+        top: 2rem;
+        opacity: 0.1;
+    }
     to {
         position: relative;
         top: 0rem;
