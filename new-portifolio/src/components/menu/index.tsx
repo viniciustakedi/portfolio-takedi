@@ -11,6 +11,10 @@ export default function Menu() {
     const handleClick = () => setMobileMenu(true);
     const handleClose = () => setMobileMenu(false);
 
+    const ScrollTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className="menu">
             <nav>
@@ -19,10 +23,10 @@ export default function Menu() {
                         <Link to="/"><img src={logo} alt="logo_takedi" /></Link>
                     </div>
                     <div className="links-span">
-                        <Link to="/"><span>Home</span></Link>
-                        <Link to="/"><span>Sobre Mim</span></Link>
-                        <Link to="/"><span>Skills</span></Link>
-                        <Link to="/"><span>Contato</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Home</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Sobre Mim</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Skills</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Contato</span></Link>
                     </div>
                     <div className="icons-menu">
                         {
@@ -36,10 +40,10 @@ export default function Menu() {
                 <div className={mobileMenu === false ? "division-links-mobile-disable" : "division-links-mobile"}>
                     <div className="links-span-mobile">
                         <p>Menu</p>
-                        <Link to="/"><span>Home</span></Link>
-                        <Link to="/"><span>Sobre Mim</span></Link>
-                        <Link to="/"><span>Skills</span></Link>
-                        <Link to="/"><span>Contato</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Home</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Sobre Mim</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Skills</span></Link>
+                        <Link to="/" onClick={ScrollTop}><span>Contato</span></Link>
                     </div>
                 </div>
             </nav>

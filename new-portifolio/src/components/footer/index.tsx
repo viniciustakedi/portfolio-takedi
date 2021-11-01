@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import './footer-style.css';
 
 export default function Footer() {
+
+    const ScrollTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return(
         <div className="footer">
             <hr />
@@ -19,9 +24,9 @@ export default function Footer() {
                 <div className="information">
                 <h2>Últimos projetos -</h2>
                     <ul>
-                        <li><Link to="/">M2S Cars</Link></li>
-                        <li><Link to="/">D + S Seguros</Link></li>
-                        <li><Link to="/">DW Blindagens</Link></li>
+                        <li><Link to="/project-m2s" onClick={ScrollTop}>M2S Cars</Link></li>
+                        <li><Link to="/" onClick={ScrollTop}>D + S Seguros</Link></li>
+                        <li><Link to="/" onClick={ScrollTop}>DW Blindagens</Link></li>
                     </ul>
                 </div>
                 <div className="information">

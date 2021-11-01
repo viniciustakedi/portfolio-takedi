@@ -440,6 +440,10 @@ main {
 }
 
 @media(max-width: 530px) {
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
     .content-home {
         padding-top: 6rem;
     }
@@ -454,10 +458,6 @@ main {
     }
     .opacity-background p {
         font-size: 1.125rem;
-    }
-    main {
-        margin-left: 2rem;
-        margin-right: 2rem;
     }
     .opacity-background:hover img {
         width: 7rem;

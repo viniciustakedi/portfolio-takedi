@@ -1,12 +1,17 @@
 import React from "react";
 import Footer from "../../components/footer";
 import Menu from "../../components/menu";
-import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import './home-style.css';
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import FotoTakedi from '../../assets/images/foto-takedi.png';
 import { Link } from "react-router-dom";
 
 export default function Home() {
+
+    const ScrollTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className="home">
             <header>
@@ -50,7 +55,7 @@ export default function Home() {
                                 <span>AGO 2021 - ... 2021</span>
                                 <h1>DW Blindagens</h1>
                                 <h2>Website completo e responsivo</h2>
-                                <Link to="/">Conhecer o projeto!</Link>
+                                <Link to="/" onClick={ScrollTop}>Conhecer o projeto!</Link>
                             </div>
                         </div>
                         <div className="project">
@@ -58,7 +63,7 @@ export default function Home() {
                                 <span>MAI 2021 - JUL 2021</span>
                                 <h1>D+S Seguros</h1>
                                 <h2>Website completo e responsivo</h2>
-                                <Link to="/">Conhecer o projeto!</Link>
+                                <Link to="/" onClick={ScrollTop}>Conhecer o projeto!</Link>
                             </div>
                         </div>
                         <div className="project">
@@ -66,7 +71,7 @@ export default function Home() {
                                 <span>JAN 2021 - ABR 2021</span>
                                 <h1>M2S Cars</h1>
                                 <h2>Website completo e responsivo</h2>
-                                <Link to="/">Conhecer o projeto!</Link>
+                                <Link to="/project-m2s" onClick={ScrollTop}>Conhecer o projeto!</Link>
                             </div>
                         </div>
                     </div>
