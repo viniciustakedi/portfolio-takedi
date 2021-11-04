@@ -11,7 +11,7 @@ export default function Home() {
     const ScrollTop = () => {
         window.scrollTo(0, 0);
     }
-
+    
     return (
         <div className="home">
             <header>

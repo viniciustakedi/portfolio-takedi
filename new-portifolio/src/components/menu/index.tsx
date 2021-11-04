@@ -7,6 +7,7 @@ import './menu-style.css';
 export default function Menu() {
 
     const [mobileMenu, setMobileMenu] = useState(false);
+    const [scrollActive, setScrollActive] = useState(false)
 
     const handleClick = () => setMobileMenu(true);
     const handleClose = () => setMobileMenu(false);
@@ -15,10 +16,19 @@ export default function Menu() {
         window.scrollTo(0, 0);
     }
 
+    window.addEventListener("scroll", function (event) {
+        var scroll = this.scrollY;
+        if (scroll > 54) {
+            setScrollActive(true)
+        } else {
+            setScrollActive(false)
+        }
+    });
+
     return (
         <div className="menu">
             <nav>
-                <div className="content-top-web">
+                <div className={scrollActive === false ? "content-top-web" : "content-top-web-shadow"}>
                     <div className="img-logo">
                         <Link to="/"><img src={logo} alt="logo_takedi" /></Link>
                     </div>

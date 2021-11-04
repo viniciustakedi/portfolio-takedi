@@ -19,6 +19,17 @@
     z-index: 10000000;
 }
 
+.content-top-web-shadow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10000000;
+    animation: shadow-menu 0.2s forwards ease-in-out;
+    transition: all 0.5s;
+}
+
 .menu nav a {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -146,6 +157,15 @@
     to {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+@keyframes shadow-menu {
+    from {
+        box-shadow: 3px 2px 4px rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);
     }
 }
 

@@ -437,6 +437,9 @@ main {
     .projects {
         grid-template-columns: 1fr;
     }
+    .projects-home {
+        padding-top: 2rem;
+    }
 }
 
 @media(max-width: 530px) {
