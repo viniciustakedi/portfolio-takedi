@@ -2,10 +2,10 @@ import React from "react";
 import Footer from "../../components/footer";
 import Menu from "../../components/menu";
 import './projects-style.css';
-import SiteM2s from '../../assets/images/projects/m2s.png';
-import SiteM2s2 from '../../assets/images/projects/m2s2.png';
+import SiteDs from '../../assets/images/projects/ds.png';
+import SiteDs2 from '../../assets/images/projects/ds2.png';
 
-export default function M2S() {
+export default function Ds() {
     return (
         <div className="content-project">
             <header>
@@ -14,7 +14,7 @@ export default function M2S() {
             <main>
                 <section className="about-project">
                     <div className="about-project-content">
-                        <h1>M2S Cars</h1>
+                        <h1>Detúlio + Silverio Seguros</h1>
                         <h2>Sobre o projeto</h2>
                         <div className="about-details-project">
                             <p id="padding-details-project">
@@ -44,10 +44,10 @@ export default function M2S() {
                     </div>
                     <div className="image-website">
                         <div className="padding-images-project">
-                            <img src={SiteM2s} alt="web-site-m2s" />
+                            <img src={SiteDs} alt="web-site-m2s" />
                         </div>
                         <div className="padding-images-project">
-                            <img src={SiteM2s2} alt="web-site-m2s" />
+                            <img src={SiteDs2} alt="web-site-m2s" />
                         </div>
                     </div>
                 </section>
@@ -180,7 +180,7 @@ export default function M2S() {
                         </div>
                     </div>
                     <div className="button-access-website">
-                        <a href="http://m2scars.com.br" target="_blank" rel="noopener noreferrer">Ir para M2S Cars!</a>
+                        <a href="http://detuliosilverioseguros.com.br" target="_blank" rel="noopener noreferrer">Ir para D+S!</a>
                     </div>
                 </section>
             </main>

@@ -185,6 +185,23 @@ main {
     display: grid;
     column-gap: 2rem;
     row-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    place-items: flex-start;
+    grid-auto-flow: row;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-tecnologies{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid-tecnologies{
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
     place-items: flex-start;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
@@ -198,6 +215,34 @@ main {
 
 #last-child-padding {
     padding-bottom: 2rem;
+}
+
+.button-access-website{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 100%;
+}
+
+.button-access-website a{
+    padding: 1rem;
+    border: 1px solid #0f141e;
+    border-radius: 25px;
+    font-size: 1.125rem;
+    color: #0f141e;
+    text-align: justify;
+    text-shadow: 2px 2px 4px #0f141e20;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+}
+
+.button-access-website a:hover{
+    background-color: #0f141e;
+    color: #fff;
 }
 /* =======[ Fim estilização ]======= */
 
@@ -302,6 +347,14 @@ main {
     }
 }
 
+@media(max-width: 805px) {
+    .grid-tecnologies{
+        column-gap: 0rem;
+        row-gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
 @media(max-width: 530px) {
     main {
         margin-left: 2rem;
@@ -326,6 +379,13 @@ main {
         font-size: 1rem;
         font-weight: 400;
     }
+    .button-access-website{
+
+    }
+    .button-access-website a{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 @media(max-width: 350px) {
@@ -348,6 +408,9 @@ main {
     .about-details-project ul li {
         font-size: 0.875rem;
         font-weight: 400;
+    }
+    .button-access-website a{
+        font-size: 0.875rem;
     }
 }
 

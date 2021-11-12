@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
+import Ds from "./pages/projects/ds";
 import M2S from "./pages/projects/m2s";
 
 export default function Routers(){
@@ -8,7 +9,8 @@ export default function Routers(){
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Home}></Route>
-                <Route path="/project-m2s" component={M2S}></Route>
+                <Route path="/projeto-m2s" component={M2S}></Route>
+                <Route path="/projeto-detuliosilverio" component={Ds}></Route>
             </Switch>
         </BrowserRouter>
     )

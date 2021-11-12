@@ -24,8 +24,8 @@ export default function Footer() {
                 <div className="information">
                 <h2>Últimos projetos -</h2>
                     <ul>
-                        <li><Link to="/project-m2s" onClick={ScrollTop}>M2S Cars</Link></li>
-                        <li><Link to="/" onClick={ScrollTop}>D + S Seguros</Link></li>
+                        <li><Link to="/projeto-m2s" onClick={ScrollTop}>M2S Cars</Link></li>
+                        <li><Link to="/projeto-detuliosilverio" onClick={ScrollTop}>D + S Seguros</Link></li>
                         <li><Link to="/" onClick={ScrollTop}>DW Blindagens</Link></li>
                     </ul>
                 </div>

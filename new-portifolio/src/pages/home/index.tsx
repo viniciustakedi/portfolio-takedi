@@ -63,7 +63,7 @@ export default function Home() {
                                 <span>MAI 2021 - JUL 2021</span>
                                 <h1>D+S Seguros</h1>
                                 <h2>Website completo e responsivo</h2>
-                                <Link to="/" onClick={ScrollTop}>Conhecer o projeto!</Link>
+                                <Link to="/projeto-detuliosilverio" onClick={ScrollTop}>Conhecer o projeto!</Link>
                             </div>
                         </div>
                         <div className="project">
