@@ -55,7 +55,7 @@ export default function Home() {
                                 <span>AGO 2021 - ... 2021</span>
                                 <h1>DW Blindagens</h1>
                                 <h2>Website completo e responsivo</h2>
-                                <Link to="/" onClick={ScrollTop}>Conhecer o projeto!</Link>
+                                <Link to="/" onClick={ScrollTop}>Em breve!</Link>
                             </div>
                         </div>
                         <div className="project">
@@ -71,7 +71,7 @@ export default function Home() {
                                 <span>JAN 2021 - ABR 2021</span>
                                 <h1>M2S Cars</h1>
                                 <h2>Website completo e responsivo</h2>
-                                <Link to="/project-m2s" onClick={ScrollTop}>Conhecer o projeto!</Link>
+                                <Link to="/projeto-m2s" onClick={ScrollTop}>Conhecer o projeto!</Link>
                             </div>
                         </div>
                     </div>

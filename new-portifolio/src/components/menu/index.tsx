@@ -18,7 +18,7 @@ export default function Menu() {
 
     window.addEventListener("scroll", function (event) {
         var scroll = this.scrollY;
-        if (scroll > 54) {
+        if (scroll > 54) { 
             setScrollActive(true)
         } else {
             setScrollActive(false)
@@ -34,7 +34,7 @@ export default function Menu() {
                     </div>
                     <div className="links-span">
                         <Link to="/" onClick={ScrollTop}><span>Home</span></Link>
-                        <Link to="/" onClick={ScrollTop}><span>Sobre Mim</span></Link>
+                        <Link to="/sobre" onClick={ScrollTop}><span>Sobre Mim</span></Link>
                         <Link to="/" onClick={ScrollTop}><span>Skills</span></Link>
                         <Link to="/" onClick={ScrollTop}><span>Contato</span></Link>
                     </div>
@@ -51,7 +51,7 @@ export default function Menu() {
                     <div className="links-span-mobile">
                         <p>Menu</p>
                         <Link to="/" onClick={ScrollTop}><span>Home</span></Link>
-                        <Link to="/" onClick={ScrollTop}><span>Sobre Mim</span></Link>
+                        <Link to="/sobre" onClick={ScrollTop}><span>Sobre Mim</span></Link>
                         <Link to="/" onClick={ScrollTop}><span>Skills</span></Link>
                         <Link to="/" onClick={ScrollTop}><span>Contato</span></Link>
                     </div>

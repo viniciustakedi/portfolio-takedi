@@ -14,31 +14,29 @@ export default function Ds() {
             <main>
                 <section className="about-project">
                     <div className="about-project-content">
-                        <h1>Detúlio + Silverio Seguros</h1>
+                        <h1>D+S Corretora</h1>
                         <h2>Sobre o projeto</h2>
                         <div className="about-details-project">
                             <p id="padding-details-project">
-                                A empresa M2S Cars é uma empresa de intermediação de veículos blindados,
-                                eles me contrataram como freelancer para fazer um website completo e
-                                responsivo. O projeto consiste em doze páginas, além de conter funções
-                                como login e cadastro de veículos. Esta foi a minha primeira experiência
-                                real no mercado de trabalho.
+                                A Detúlio + Silvério é uma assessoria e corretora de seguros, a D+S me chamou
+                                para realizar uma reformulação no website da corretora de seguros. O site estava\
+                                defasado, tanto a parte estética como a parte funcional.
                             </p>
                             <p id="padding-details-project">
-                                O site conta com um front-end desenvolvido com ReactJs e back-end construído no framework LUMEN.
+                                Para realizar o front-end foi utilizado o ReactJs com TypeScript e o back-end
+                                foi construído no framework Láravel (PHP).
                             </p>
                             <p id="padding-details-project">
-                                A principal funcionalidade solicitada pela empresa foi o cadastro de veículos por completo, desde marca,
-                                cor, final da placa, até a descrição do veículo com imagens detalhadas.
+                                A principal funcionalidade que a corretora pediu foi para que os clientes pudessem
+                                enviar emails via formulários pelo website. Além do design os textos foram reformulados também.
                             </p>
 
-                            <h3>As principais funcionalidades solicitadas pela M2S Cars:</h3>
+                            <h3>As principais funcionalidades solicitadas pela D+S:</h3>
                             <ul>
-                                <li>Sistema de login</li>
-                                <li>Cadastro de veículos</li>
-                                <li>Cadastro de marcas de veículos</li>
-                                <li>Cadastro de tipos de carrocerias</li>
-                                <li id="last-child-padding">Cadastro de administradores</li>
+                                <li>Envio de formulários por email.</li>
+                                <li>Design baseado na estética da corretora.</li>
+                                <li>Botões para acessar o whatsapp da corretora.</li>
+                                <li id="last-child-padding">Entre outros.</li>
                             </ul>
                         </div>
                     </div>
@@ -59,20 +57,20 @@ export default function Ds() {
                         <div className="about-details-project">
                             <div className="grid-text-project">
                                 <p>
-                                    O front-end deste website foi construído em cima da biblioteca ReactJs
+                                    O front-end do website foi construído em cima da biblioteca ReactJs
                                     com TypeScript. A escolha do TypeScript foi para dar tipagem ao JavaScript,
                                     além de melhorar a qualidade e o entendimento do código.
                                 </p>
                                 <p>
-                                    Além da construção e projeção do front-end, foram utilizados metodologias ágeis,
+                                    Além da construção e plnejamento do front-end, foram utilizados metodologias ágeis,
                                     como SCRUM, metodologias de organização como Trello e organização de código com
                                     versionadores como Git e GitHub.
                                 </p>
                                 <p >
-                                    Para essa etapa do front-end foi utilizada uma semana para a modelagem do website,
-                                    contando com o wireframe e  protótipo de alta fidelidade, ambos foram feitos no
-                                    figma. E para a construção do website no React foram utilizados vinte e cinco dias
-                                    (três semanas e meia).
+                                    Para essa etapa do front-end foi utilizado cinco dias para a modelagem do website
+                                    (protótipo de alta fidelidade), feito no
+                                    figma. E para a construção do website com o React, foram utilizados trinta e cinco dias
+                                    (um mês e cinco dias).
                                 </p>
                             </div>
                             <h3 id="padding-h3-project">Tecnologias utilizadas nessa etapa:</h3>
@@ -91,58 +89,32 @@ export default function Ds() {
                     </div>
                     <div className="content-back-end">
                         <div className="about-project-content">
-                            <h2 id="title-padding-top">Back-End e Data-base</h2>
+                            <h2 id="title-padding-top">Back-End</h2>
                         </div>
                         <div className="about-details-project">
                             <div className="grid-text-project">
                                 <p>
-                                    1. Para realizar o pedido do cliente, eu achei viável realizar um back-end,
-                                    com as tecnologias ASP.NET Core com Entity Framework e autenticação com o JWT, além,
-                                    do banco de dados feito no SQLServer, fiz também diagramas e modelagens do banco feitas no draw.io.
-                                    Toda a API foi feita em tecnologias que tenho conhecimento, porém,
-                                    houve um problema na hora da implantação da API no servidor (Tipo da API é a REST).
+                                    A principal função do back-end/API é enviar dados de formulários preenchidos pelos usuários/clientes
+                                    para o e-mail da corretora. O envio é feito automaticamente após o usuário clicar no botão enviar,
+                                    após o clique a API envia os dados preenchidos do formulário para o e-mail das pessoas responsáveis
+                                    pelo assunto, podendo ser dados para cotações de seguros, ou para tirar dúvidas de usuários.
                                 </p>
                                 <p>
-                                    2. Infelizmente o cliente contratou um serviço de hospedagem o qual o servidor rodava
-                                    o Apache Linux, tornando inviável rodar uma API feita em ASP.NET, visto que, o C# e o
-                                    Sql Server é da Microsoft e “não roda” no Linux. Então tive que estudar e aprender em duas
-                                    semanas como fazer uma API REST em PHP e usar um novo banco de dados. Na escolha surgiu a
-                                    oportunidade de utilizar o MySql, para poder rodar no servidor contratado.
-                                </p>
-                                <p>
-                                    3. Em duas semanas eu aprendi a fazer uma API REST em PHP com o framework Lumen, que seria
-                                    uma vertente do Laravel, além, de aprender a utilizar um novo banco de dados, como todos os
-                                    bancos de dados utilizam o sql como linguagem é bem mais fácil e prático aprender.
-                                    Depois de estudar e aprender, tudo foi realizado com sucesso podendo ser implantado no servidor.
-                                </p>
-
-                                <p>
-                                    4. No geral o propósito foi cumprido, as duas APIs funcionam e excutam as mesmas
-                                    requisições, além da autenticação JWT para administradores que funciona igual nas
-                                    duas APIs. Com o data-base MySql,
+                                    Para a construção do back-end foi utilizado o framework Laravel (PHP), o motivo de escolher o Laravel
+                                    foi pela sua praticidade, pois ele possui uma biblioteca especialmente para envio de e-mails. O Gmail
+                                    foi utilizado para o envio dos e-mails, utilizando o smtp.gmail o envio dos e-mails fica mais prático,
+                                    além de ter todo o sistema de criptografia TLS que é necessário para manter a integridade e a segurança
+                                    das informações
                                 </p>
                             </div>
                             <div className="grid-tecnologies">
                                 <div className="flex-tecnologies">
-                                    <h3 id="padding-h3-project">Tecnologias utilizadas (Back-end):</h3>
-                                    <ul>
-                                        <li>Lumen Framework</li>
-                                        <li>PHP</li>
-                                        <li>Entity Framework</li>
-                                        <li>ASP.NET</li>
-                                        <li>C#</li>
-                                        <li>Git</li>
-                                        <li>GitHub</li>
-                                        <li>Trello</li>
-                                    </ul>
-                                </div>
-                                <div className="flex-tecnologies">
                                     <h3 id="padding-h3-project">Tecnologias utilizadas (Data-base):</h3>
                                     <ul>
-                                        <li>MySql</li>
-                                        <li>SQL Server</li>
-                                        <li>Sql</li>
-                                        <li>Draw.io</li>
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>SMTP</li>
+                                        <li>Gmail</li>
                                         <li>Git</li>
                                         <li>GitHub</li>
                                         <li>Trello</li>
@@ -158,24 +130,21 @@ export default function Ds() {
                         <div className="about-details-project">
                             <div className="grid-text-project">
                                 <p>
-                                    Para a implantação do front-end, back-end e do banco de dados no servidor, foi uma nova missão,
-                                    visto que, eu nunca tive contato com essa parte de servidores. Para aprender, tive
-                                    que buscar informações de como compilar apps React para produção, sistema de rotas, e como
-                                    implementar uma API no servidor juntamente com o banco de dados entre outras coisas.
+                                    O servidor foi contratado antecipadamente pela corretora, e como eu tive experiência de como
+                                    colocar um projeto em produção, não foi um problema. A prestadora de serviço só me passou o
+                                    login para realizar no FTP e eu consegui subir todos os arquivos no FileZilla.
                                 </p>
                                 <p>
-                                    Depois de aprender todos os tópicos, foi a hora de produzir. Baixei o FileZilla para subir os
-                                    arquivos no servidor por FTP, arquivos do front-end (ReactJs) e back-end (PHP-Lumen), e utilizei
-                                    o CPanel (O servidor contratado tinha o CPanel) para
-                                    definir e montar o banco de dados, além dos e-mails do cliente.
+                                    O único problema foi solicitar o SSL, visto que, a prestadora de serviços não contratou o servidor
+                                    web com o certificado, com isso eu solicitei que a corretora pagasse a mais para que o certificado
+                                    SSL ficasse disponível, pois, trás mais segurança para o website e API.
                                 </p>
                             </div>
                             <h3 id="padding-h3-project">Tecnologias utilizadas (Server):</h3>
                             <ul>
                                 <li>Apache</li>
                                 <li>Linux</li>
-                                <li>CPanel</li>
-                                <li>Filezilla</li>
+                                <li>FileZilla</li>
                             </ul>
                         </div>
                     </div>

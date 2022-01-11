@@ -1,0 +1,30 @@
+/* ======[ Começo Estilização ]====== */
+main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+}
+/* ======[ Fim Estilização ]====== */
+/* ======[ Começo Responsividade ]====== */
+@media(max-width: 530px) {
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media(max-width: 350px) {
+    main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+/* ======[ Fim Responsividade ]====== */
+
+
